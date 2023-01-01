@@ -9,8 +9,6 @@
 
 [Marp](https://marp.app/) 提供了非常方便快捷服务使得我们可以直接从 Markdown 生成 Slides 或者类似于 PPT 的 pdf 文件，而且它支持 **Vscode**
 
-![Marp](https://img-blog.csdnimg.cn/20201128181858481.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTY1MDM0OA==,size_16,color_FFFFFF,t_70)
-
 ![Marp Vscode gif](https://raw.githubusercontent.com/marp-team/marp-vscode/main/docs/toggle.gif)
 
 在这个仓库中编写了 PKU 主题的一些模版可以供大家直接日常使用，包括但不限于用于日常的组会汇报，课程 pre 等等场景。
