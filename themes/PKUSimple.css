@@ -211,7 +211,6 @@ section.title h4{
 
 section.title p{
    text-align: left;
-   margin-top: 0px;
 }
 
 /* Content Page */
@@ -220,6 +219,7 @@ section.content {
    background-size: 50% 100%;
    background-position: right;
    background-repeat: no-repeat;
+   justify-content: start;
 }
 
 
@@ -235,7 +235,6 @@ section.content h2{
    text-align: left;  
    font-size:20pt;
    font-family: 'Microsoft YaHei';
-   margin-top: 5px;
 }
 section.content h3 {
    text-align: left;  
@@ -274,6 +273,8 @@ section.chapter h1 {
 
 section.chapter h1 strong{
    color: whitesmoke;
+   font-weight: bold;
+   padding-right: 50px;
 }
 
 
