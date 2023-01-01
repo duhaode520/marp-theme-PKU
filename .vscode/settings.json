@@ -1,7 +1,7 @@
 {
     "markdown.marp.themes": [
       "./themes/PKUSimple.css",
-      // "./themes/PKUMag.css",
+      "./themes/PKUMag.css",
     ],
     "markdown.marp.enableHtml": true
 }

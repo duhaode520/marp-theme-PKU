@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: PKUSimple
+theme: PKUMag
 paginate: true
 ---
 <!-- 
@@ -8,6 +8,7 @@ _class: title
 _paginate: false
 -->
 # 在这里输入标题总共这么多字这里是第二行标题 H1
+<!-- # 在这里输入标题 -->
 ## 在这里输入副标题  h2
 ### 作者 H3
 #### 日期 H4
@@ -17,8 +18,8 @@ _paginate: false
 _class: content
 _paginate: false 
 -->
-# 目录 H1
-## Content H2
+# 目录 
+## Content 
 ### **01** 基本样式 H3
 ### **02** 列表
 ### **03** 代码
@@ -28,10 +29,8 @@ _paginate: false
 ### **07** 分栏
 
 ---
-<!--
-_class: chapter
--->
-# 01 基本样式
+<!-- _class: chapter-->
+# **PART 01** 基本样式 H1
 
 ---
 <!-- _header: 使用header来添加标题-->
@@ -83,6 +82,8 @@ int main() {
 # 行间代码
 这个是行间代码`this is code`
 
+
+<!--_footer: footertest-->
 ---
 <!--_header: 表格-->
 
@@ -165,3 +166,9 @@ _class: split
 # 分栏2
 当然也可以直接使用bg的方式来对图片进行分栏
 在这样的情况下可能无法使用header
+
+---
+<!--
+_class: title
+_paginate: false-->
+# 恳请大家批评指正

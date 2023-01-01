@@ -1,0 +1,347 @@
+/* @theme PKUMag */
+
+@charset "UTF-8";
+@import 'default';
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900|Roboto+Mono:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root{
+	--color-pku:#C00000;
+   --color-highlight:#C00000;
+   --title-bg-color: rgba(255,255,255,0.9);
+}
+section {
+	font-size: 24px;
+	padding-left: 50px;
+	text-align: left;
+	font-family:'Microsoft YaHei';
+	background:whitesmoke;
+	padding-top:120px;
+   color:black;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   max-inline-size: auto 80%;
+   justify-content: flex-start;
+}
+
+h1 {
+   color:black;
+   font-size:40px;
+   text-align:left;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+h2 {
+   font-size:36px;
+   text-align:left;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   margin-left:0px;
+}
+
+
+h3 {
+   text-align:left;
+   font-weight: bold;
+   font-size:32px;
+   text-align:left;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   margin-left:0px;
+}
+
+h4 {
+   text-align:left;
+   font-weight: bold;
+   font-size:28px;
+   text-align:left;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+h5 {
+   text-align:left;
+   font-size:24px;
+   text-align:left;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+
+h6 {
+   text-align:left;
+   font-size:24px;
+   text-align:left;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-family: "KaiTi";
+   color:black;
+}
+h1,h2,h3,h4,h5,h6::part(auto-scaling) {
+      max-height: 580px; 
+}
+
+header {
+   left: 50px;
+   right: 50px;
+   height: 3cm;
+   top:0px;
+
+   background-image: url("./images/PKUMag_header.png"); 
+   background-position: left 0%;
+   background-repeat: no-repeat;
+   background-size: contain;
+   text-align:left;
+   color: #C00000;
+   font-weight: bold;
+   font-size:48px;
+   /* border-top: #900000 10px solid; */
+   padding-left:16%;
+   padding-top:20px;
+}
+
+footer {
+   font-size: 12pt;
+   text-align: left;
+   position: absolute;
+   color: rgb(100,100,100);
+   width: 95%;
+   /* height: 50px; */
+   /* border-top: gray 2px dashed; */
+   padding-top: 0px;
+   padding-bottom: 0px;
+   bottom: 0px;
+   border-bottom: 5px solid var(--color-pku);
+}
+
+/* formatting page numbers*/
+section::after {
+   font-size: 24pt;
+   /* color:darkgray; */
+   /* width:100px; */
+   font-weight: 600;
+   color: var(--color-pku);
+   /* https://github.com/yhatt/marp/issues/263 */
+   content: attr(data-marpit-pagination);
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+   border-right: 10px solid var(--color-pku);
+   padding-right:20px;
+}
+
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+   font-size: 24px;
+}
+
+
+/* 代码块 */
+code {
+  font-family: 'Source Code Pro', monospace;
+  /* color:red */
+}
+pre code{
+   font-size: 14pt;
+}
+
+table {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* 引用块 */
+blockquote {
+  border-left: 5px solid var(--color-pku);
+  display: block;
+  /* font-family: 'Times New Roman', Times, serif; */
+  background-color: rgba(100,100,100,0.1);
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color:black
+}
+blockquote::after{
+   content: " ";
+}
+
+blockquote::before{
+   content: " ";
+}
+
+/** 页面模版 **/
+/* Section title */
+section.title {
+   background-image: url("./images/PKUMag_title_bg.png");
+   background-size: 100% 100%;
+   background-position: center top;
+   background-repeat: no-repeat;
+   padding: 0px;
+   justify-content: center;
+}
+section.title h1 {
+   color: var(--color-pku);
+   text-align: center;  
+   font-size:60pt;
+   font-family: 'Microsoft YaHei';
+   background-color: var(--title-bg-color);
+   background-image: url("./images/PKUlogo_square.png");
+   background-position: center 20px;
+   background-repeat: no-repeat;
+   background-size: 150px;
+   /* border-bottom: var(--title-bg-color) 1px solid; */
+   margin-block-start: 0px;
+   margin-block-end: 0px;
+   
+   padding-top:15%;
+   padding-bottom:15%;
+   padding-left: 7.5%;
+   padding-right: 7.5%;
+   margin:0px;
+   /* border-bottom: var(--title-bg-color) 0.5px solid; */
+}
+section.title h2 {
+   text-align: center;  
+   font-family: 'Microsoft YaHei';
+   color:var(--color-pku);
+   /* background-color: var(--title-bg-color); */
+   /* border-top: var(--title-bg-color) 0.5px solid; */
+   margin-top:-13%;
+   margin-left:0px;
+   text-align: center;  
+   /* position: relative; */
+
+}
+
+section.title h3{
+   text-align: center;  
+   /* position:; */
+   /* top:75%; */
+   font-family: 'Microsoft YaHei';
+   color: black;
+   /* background-color: red; */
+   margin-left:0px;
+}
+
+section.title h4{
+   text-align: center;  
+   font-family: 'Microsoft YaHei';
+   color:black;
+   font-style: normal;
+   margin-left:0px;
+}
+
+section.title p{
+   text-align: left;
+   margin-top: 0px;
+}
+
+/* Content Page */
+section.content {
+   background-image: url("./images/PKUMag_content_bg.png");
+   background-size: auto 100%;
+   background-position: left;
+   background-repeat: no-repeat;
+   justify-content: space-between;
+   padding-top: 180px;
+   
+}
+
+section.content h1,section.content h2, section.content h3
+{
+   margin-left:45%;
+}
+
+section.content h1 {
+   color: var(--color-pku);
+   text-align: left;  
+   font-size:48pt;
+   font-family: 'Microsoft YaHei';
+   position:fixed;
+   top: 3%;
+   left: -1%;
+}
+section.content h2{
+   color: var(--color-pku);
+   text-align: left;  
+   font-size:30pt;
+   font-family: 'Microsoft YaHei';
+   position:fixed;
+   top: 15%;
+   left: -1%;
+}
+section.content h3 {
+   text-align: left;  
+   font-size:24pt;
+   font-family: 'Microsoft YaHei';
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+
+section.content h3 strong {
+  /* -webkit-text-stroke: 1px #900000; */
+  background-color: var(--color-pku);
+  color:white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding:10px;
+  margin-right: 15px;
+}
+
+/* Chapter Page */
+section.chapter {
+   background-image: url("./images/PKUMag_chapter_bg.png");
+   background-size: 100% 510px;
+   background-position: top;
+   background-repeat: no-repeat;
+   padding:0px;
+   justify-content: center;
+}
+
+
+section.chapter h1 {
+   color: #3c3c3c;
+   text-align: left;  
+   font-size:60pt;
+   font-family: 'Microsoft YaHei';
+   font-weight: bolder;
+   padding-left:180px;
+   background-image: url("./images/PKUlogo_square.png");
+   background-repeat: no-repeat;
+   background-position: left 20px bottom 10px;
+   background-size: 120px;
+   color:#900000;
+}
+
+section.chapter h1 strong{
+   margin-top: 264px;
+   font-size: 72pt;
+   display: block;
+   text-align: left;
+   background-color: rgba(212,0,0,0.7);
+   color:whitesmoke;
+   width:100%;
+   margin-left: -180px;
+   margin-bottom: 20px;
+   padding-bottom: 30px;
+   padding-top:30px;
+   padding-left: 50%;
+   
+}
+
+
+/* Split pages*/
+section .columns {
+   padding: 5px;
+   overflow: visible;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: auto;
+   grid-template-areas: 
+      "leftpanel rightpanel";
+   gap:1rem;
+}
