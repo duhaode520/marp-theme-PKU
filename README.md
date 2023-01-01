@@ -14,11 +14,27 @@
 ![Marp Vscode gif](https://raw.githubusercontent.com/marp-team/marp-vscode/main/docs/toggle.gif)
 
 在这个仓库中编写了 PKU 主题的一些模版可以供大家直接日常使用，包括但不限于用于日常的组会汇报，课程 pre 等等场景。
-文件结构
+
+**文件结构**
+
+```bash
+│  demo.md  # 样例文件，下面的图片由该文件直接生成
+│  README.md
+├─.vscode
+│	settings.json # 更改 settings.json 文件来引入新的主题
+├─assets
+├─images
+└─themes # 两个主题
+	PKUMag.css
+    PKUSimple.css
+```
 
 > 更多的 Marp 教程详见：
 > 
 > https://caizhiyuan.gitee.io/categories/skills/20200730-marp.html
+
+**欢迎大家拍砖提issue!**
+
 ---
 
 ## PKUSimple
